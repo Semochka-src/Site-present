@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Random - все про Python!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        
+        <div class="text-nav-bar">
+            <a href="#">Что это такое</a>
+        </div>
+        
+        <div class="main-logo">
+            <img src="images/Import-Random-Logo.png" alt="">
+        </div>
+
+        <div class="text-nav-bar-2">
+            <a href="#block-two">Как его использовать</a>
+        </div>
+    </div>
+
+    <div class="boxes-information">
+        <div class="one-box-info">
+            <h1>Модуль <a href="#">Random</a></h1>
+            <p>Модуль random в Python <br>предназначен для генерации 
+                псевдослучайных чисел. Когда программе на Python нужна работа с 
+                какими-то случайными элементами, подключают модуль "Random". Это
+                встроенная возможность языка программирования, которую можно 
+                добавить в код и использовать несколькими способами.</p>
+        </div>
+        <div class="two-box-info">
+            <h1>Функции <a href="#">модуля</a></h1>
+            <p>random() — генерирует случайное 
+                число от 0.0 до 1.0; 2
+                <br><br>
+                randint() — возвращает случайное 
+                число из определённого диапазона; 
+                <br><br>
+                randrange() — возвращает случайное 
+                число из определённого набора чисел; 
+                <br><br>
+                shuffle() — перемешивает список; 
+                <br><br>
+                choice() — возвращает случайный
+                элемент списка. </p>
+        </div>
+        <div class="three-box-info">
+            
+        </div>
+    </div>
+    </div>
+    <div class="block-two-info">
+        <div class="container-block-two" id="block-two">
+            <h1>Random.random ()</h1>
+            <div class="container-info-block-1">
+                <p>Базовая функция модуля, которая возвращает вещественное 
+                    дробное число от 0 до 1. Точка в такие числах может 
+                    находиться на разных позициях — говорят, что она может 
+                    плавать. На основе возвращаемого числа с плавающей точкой
+                    из функции random можно построить более сложные алгоритмы.</p>
+            </div>
+            <div class="container-info-block-2">
+                <p>При использовании этой функции нужно помнить, что
+                    компьютеры возвращают искусственно сгенерированные 
+                    псевдослучайные числа. Псевдослучайные числа зависят 
+                    от инициализирующего числа seed, которое берётся за 
+                    основу генерации. Например, если значение seed всегда 
+                    равно 3, то генерируемые числа при каждом запуске 
+                    программы будут одинаковыми. Это обеспечивает повторную 
+                    воспроизводимость, но не подходит для ситуаций, когда 
+                    нужны по-настоящему случайные числа.</p>
+            </div>
+            <div class="container-info-block-3">
+                <p>Вот пример, указанный снизу. Инициализирующее число устанавливается 
+                    командой random.seed(5). После этого каждый раз 
+                    при запуске программы компьютер будет выдавать одни 
+                    и те же варианты случайных чисел:</p>
+            </div>
+            <div class="examples">
+                <div class="example-one">
+                    <div class="container-example-one">
+                        <div class="page-1">
+                            <p>1.</p><p class="pi-one">Import</p><p class="pi-two">random</p>
+                        </div>
+                        <div class="page-2">
+                            <p>2.</p><p class="pi-one-1">random.seed(5)</p>
+                        </div>
+                        <div class="page-3">
+                            <p>3.</p><p class="pi-one-2">print(random.random())</p>
+                        </div>
+                        <div class="page-4">
+                            <p>4.</p><p class="pi-one-3">print(random.random())</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="example-two">
+                    <p class="ex-e">В этом коде мы будем получать два числа в консоли, выведенных командой print():</p>
+                    
+                    <div class="numbers">
+                        <a class="n-one">0.6229016948897019</a>
+                        <a class="n-two">0.7417869892607294</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
